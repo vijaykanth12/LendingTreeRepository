@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:tx="http://www.springframework.org/schema/tx"
+	xsi:schemaLocation="
+http://www.springframework.org/schema/beans
+http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+http://www.springframework.org/schema/context
+http://www.springframework.org/schema/context/spring-context-3.0.xsd
+http://www.springframework.org/schema/tx
+http://www.springframework.org/schema/tx/spring-tx-3.0.xsd">
+
+	<context:property-placeholder location="classpath:resources/db.properties" />
+	<context:component-scan base-package="com.lendingtree" />
+
+	<tx:annotation-driven transaction-manager="hibernateTransactionManager"/>
+
+	
+		 <bean id="viewResolver2" class="org.springframework.web.servlet.view.ResourceBundleViewResolver">
+        <property name="order" value="1"/>
+        <property name="basename" value="views"/>
+    </bean>
+    <bean id="multipartResolver"
+        class="org.springframework.web.multipart.commons.CommonsMultipartResolver">
+        <!-- max upload size in bytes -->
+        <property name="maxUploadSize" value="20971520" /> <!-- 20MB -->
+        
+        <!-- max size of file in memory (in bytes) -->
+        <property name="maxInMemorySize" value="1048576" /> <!-- 1MB -->
+
+    </bean>
+	<bean id="viewResolver"
+    	class="org.springframework.web.servlet.view.UrlBasedViewResolver">
+    	<property name="viewClass">
+	        <value>
+	            org.springframework.web.servlet.view.tiles2.TilesView
+	        </value>
+	    </property>
+	</bean>
+	<bean id="tilesConfigurer"
+	    class="org.springframework.web.servlet.view.tiles2.TilesConfigurer">
+	    <property name="definitions">
+	        <list>
+	            <value>/WEB-INF/config/tiles.xml</value>
+	        </list>
+	    </property>
+	</bean>
+
+	<bean id="dataSource"
+		class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+		<property name="driverClassName" value="${database.driver}" />
+		<property name="url" value="${database.url}" />
+		<property name="username" value="${database.user}" />
+		<property name="password" value="${database.password}" />
+	</bean>
+
+<bean id="ApplyLoanService" class="com.lendingtree.service.ApplyLoanServiceImpl"/>
+<bean id="BankService" class="com.lendingtree.service.BankServiceImpl"/>
+<bean id="DeptService" class="com.lendingtree.service.DeptServiceImpl"/>
+<bean id="EmployeeService" class="com.lendingtree.service.EmployeeServiceImpl"/>
+<bean id="LendingTreeService" class="com.lendingtree.service.LendingTreeServiceImpl"/>
+<bean id="LoanService" class="com.lendingtree.service.LoanServiceImpl"/>
+<bean id="MessageModelService" class="com.lendingtree.service.MessageModelServiceImpl"/>
+<bean id="RegistrationService" class="com.lendingtree.service.RegistrationServiceImpl"/>
+<bean id="SecurityService" class="com.lendingtree.service.SecurityServiceImpl"/>
+<bean id="UploadFileService" class="com.lendingtree.service.UploadFileServiceImpl"/>
+
+<bean id="sessionFactory"
+		class="org.springframework.orm.hibernate3.annotation.AnnotationSessionFactoryBean">
+		<property name="dataSource" ref="dataSource" />
+		<property name="annotatedClasses">
+			<list>
+				<value>com.lendingtree.model.Registration</value>
+				<value>com.lendingtree.model.Bank</value>
+				<value>com.lendingtree.model.Employee</value>
+				<value>com.lendingtree.model.Loan</value>
+				<value>com.lendingtree.model.Dept</value>
+				<value>com.lendingtree.model.ApplyLoan</value>
+				<value>com.lendingtree.model.MessageModel</value>
+				<value>com.lendingtree.model.LoanApply</value>
+				<value>com.lendingtree.model.ApplicationLog</value>
+				<value>com.lendingtree.model.Userslist</value>
+				<value>com.lendingtree.model.UserRole</value>
+			    <value>com.lendingtree.model.TransactionLog</value>
+				
+			</list>
+		</property>
+		<property name="hibernateProperties">
+			<props>
+				<prop key="hibernate.dialect">${hibernate.dialect}</prop>
+				<prop key="hibernate.show_sql">${hibernate.show_sql}</prop>
+				<prop key="hibernate.hbm2ddl.auto">${hibernate.hbm2ddl.auto}</prop>				
+			</props>
+		</property>
+	</bean>
+
+	<bean id="hibernateTransactionManager"
+		class="org.springframework.orm.hibernate3.HibernateTransactionManager">  
+		<property name="sessionFactory" ref="sessionFactory" />
+	</bean>
+	
+</beans>

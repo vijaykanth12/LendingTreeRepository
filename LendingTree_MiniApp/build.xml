@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- WARNING: Eclipse auto-generated file.
+              Any modifications will be overwritten.
+              To include a user specific buildfile here, simply create one in the same
+              directory with the processing instruction <?eclipse.ant.import?>
+              as the first entry and export the buildfile again. --><project basedir="." default="build" name="LendingTree_MiniApp">
+    <property environment="env"/>
+    <property name="ECLIPSE_HOME" value="../../Softwares/Eclipse Kepler/eclipse"/>
+    <property name="debuglevel" value="source,lines,vars"/>
+    <property name="target" value="1.6"/>
+    <property name="source" value="1.6"/>
+    <path id="Web App Libraries.libraryclasspath">
+        <pathelement location="WebContent/WEB-INF/lib/activation-1.0.2.jar"/>
+        <pathelement location="WebContent/WEB-INF/lib/activation.jar"/>
+        <pathelement location="WebContent/WEB-INF/lib/antlr-2.7.6.jar"/>
+        <pathelement location="WebContent/WEB-INF/lib/aopalliance-1.0.jar"/>
+        <pathelement location="WebContent/WEB-INF/lib/asm-1.5.3.jar"/>
+        <pathelement location="WebContent/WEB-INF/lib/asm-attrs-1.5.3.jar"/>
+        <pathelement location="WebContent/WEB-INF/lib/cglib-2.1_3.jar"/>
+        <pathelement location="WebContent/WEB-INF/lib/com.springsource.org.jboss.util-2.2.9.GA.jar"/>
+        <pathelement location="WebContent/WEB-INF/lib/commons-beanutils-1.7.0.jar"/>
+        <pathelement location="WebContent/WEB-INF/lib/commons-collections-2.1.1.jar"/>
+        <pathelement location="WebContent/WEB-INF/lib/commons-dbcp.jar"/>
+        <pathelement location="WebContent/WEB-INF/lib/commons-digester-1.8.jar"/>
+        <pathelement location="WebContent/WEB-INF/lib/commons-email-1.0.jar"/>
+        <pathelement location="WebContent/WEB-INF/lib/commons-fileupload-1.1.1.jar"/>
+        <pathelement location="WebContent/WEB-INF/lib/commons-io-1.1.jar"/>
+        <pathelement location="WebContent/WEB-INF/lib/commons-lang-2.5.jar"/>
+        <pathelement location="WebContent/WEB-INF/lib/commons-logging-1.1.1.jar"/>
+        <pathelement location="WebContent/WEB-INF/lib/concurrent-10.3.jar"/>
+        <pathelement location="WebContent/WEB-INF/lib/dom4j-1.6.1.jar"/>
+        <pathelement location="WebContent/WEB-INF/lib/dumbster-1.6.jar"/>
+        <pathelement location="WebContent/WEB-INF/lib/easymock.jar"/>
+        <pathelement location="WebContent/WEB-INF/lib/ehcache-1.2.3.jar"/>
+        <pathelement location="WebContent/WEB-INF/lib/ejb-3.0.jar"/>
+        <pathelement location="WebContent/WEB-INF/lib/ezmorph-1.0.jar"/>
+        <pathelement location="WebContent/WEB-INF/lib/hibernate-3.2.6.ga.jar"/>
+        <pathelement location="WebContent/WEB-INF/lib/hibernate-annotations-3.3.1.GA.jar"/>
+        <pathelement location="WebContent/WEB-INF/lib/hibernate-commons-annotations-3.0.0.ga.jar"/>
+        <pathelement location="WebContent/WEB-INF/lib/hibernate-entitymanager-3.3.2.GA.jar"/>
+        <pathelement location="WebContent/WEB-INF/lib/hibernate-search-3.0.0.GA.jar"/>
+        <pathelement location="WebContent/WEB-INF/lib/hibernate-validator-4.0.2.GA.jar"/>
+        <pathelement location="WebContent/WEB-INF/lib/icu4j-3.4.4.jar"/>
+        <pathelement location="WebContent/WEB-INF/lib/itextpdf-5.1.0.jar"/>
+        <pathelement location="WebContent/WEB-INF/lib/jackson-all-1.9.0.jar"/>
+        <pathelement location="WebContent/WEB-INF/lib/jakarta-commons-collections.jar"/>
+        <pathelement location="WebContent/WEB-INF/lib/jamon-2.7.jar"/>
+        <pathelement location="WebContent/WEB-INF/lib/java-json.jar"/>
+        <pathelement location="WebContent/WEB-INF/lib/javassist-3.4.GA.jar"/>
+        <pathelement location="WebContent/WEB-INF/lib/javax.mail.jar"/>
+        <pathelement location="WebContent/WEB-INF/lib/jaxb-api-2.1.jar"/>
+        <pathelement location="WebContent/WEB-INF/lib/jaxb-impl-2.1.3.jar"/>
+        <pathelement location="WebContent/WEB-INF/lib/jaxen-1.1.1.jar"/>
+        <pathelement location="WebContent/WEB-INF/lib/jboss-modules.jar"/>
+        <pathelement location="WebContent/WEB-INF/lib/jboss-msc-1.2.0.beta1.jar"/>
+        <pathelement location="WebContent/WEB-INF/lib/jboss-vfs.jar"/>
+        <pathelement location="WebContent/WEB-INF/lib/jdom-1.0.jar"/>
+        <pathelement location="WebContent/WEB-INF/lib/jmxremote.jar"/>
+        <pathelement location="WebContent/WEB-INF/lib/jmxremote_optional.jar"/>
+        <pathelement location="WebContent/WEB-INF/lib/jmxri.jar"/>
+        <pathelement location="WebContent/WEB-INF/lib/jmxtools-1.2.1.jar"/>
+        <pathelement location="WebContent/WEB-INF/lib/jotm.jar"/>
+        <pathelement location="WebContent/WEB-INF/lib/json-lib.jar"/>
+        <pathelement location="WebContent/WEB-INF/lib/jstl-1.2.jar"/>
+        <pathelement location="WebContent/WEB-INF/lib/jta-1.1.jar"/>
+        <pathelement location="WebContent/WEB-INF/lib/jxl.jar"/>
+        <pathelement location="WebContent/WEB-INF/lib/log4j-1.2.14.jar"/>
+        <pathelement location="WebContent/WEB-INF/lib/lucene-core-2.3.2.jar"/>
+        <pathelement location="WebContent/WEB-INF/lib/lucene-highlighter-2.0.0.jar"/>
+        <pathelement location="WebContent/WEB-INF/lib/mail-1.4.jar"/>
+        <pathelement location="WebContent/WEB-INF/lib/mail.jar"/>
+        <pathelement location="WebContent/WEB-INF/lib/mysql-connector-java-5.0.5.jar"/>
+        <pathelement location="WebContent/WEB-INF/lib/ojdbc14.jar"/>
+        <pathelement location="WebContent/WEB-INF/lib/persistence-api-1.0.jar"/>
+        <pathelement location="WebContent/WEB-INF/lib/persistence.jar"/>
+        <pathelement location="WebContent/WEB-INF/lib/poi-3.5-FINAL.jar"/>
+        <pathelement location="WebContent/WEB-INF/lib/quartz-1.5.2.jar"/>
+        <pathelement location="WebContent/WEB-INF/lib/slf4j-api-1.5.6.jar"/>
+        <pathelement location="WebContent/WEB-INF/lib/slf4j-log4j12-1.5.6.jar"/>
+        <pathelement location="WebContent/WEB-INF/lib/spring-aop-3.1.2.RELEASE.jar"/>
+        <pathelement location="WebContent/WEB-INF/lib/spring-asm-3.1.2.RELEASE.jar"/>
+        <pathelement location="WebContent/WEB-INF/lib/spring-beans-3.1.2.RELEASE.jar"/>
+        <pathelement location="WebContent/WEB-INF/lib/spring-context-3.1.2.RELEASE.jar"/>
+        <pathelement location="WebContent/WEB-INF/lib/spring-core-3.1.2.RELEASE.jar"/>
+        <pathelement location="WebContent/WEB-INF/lib/spring-expression-3.1.2.RELEASE.jar"/>
+        <pathelement location="WebContent/WEB-INF/lib/spring-javaconfig.jar"/>
+        <pathelement location="WebContent/WEB-INF/lib/spring-jdbc-3.1.2.RELEASE.jar"/>
+        <pathelement location="WebContent/WEB-INF/lib/spring-orm-3.1.2.RELEASE.jar"/>
+        <pathelement location="WebContent/WEB-INF/lib/spring-oxm-3.1.2.RELEASE.jar"/>
+        <pathelement location="WebContent/WEB-INF/lib/spring-security-acl-3.1.0.RC3.jar"/>
+        <pathelement location="WebContent/WEB-INF/lib/spring-security-config-3.1.0.M2.jar"/>
+        <pathelement location="WebContent/WEB-INF/lib/spring-security-core-3.1.0.M2.jar"/>
+        <pathelement location="WebContent/WEB-INF/lib/spring-security-taglibs-3.1.0.M2.jar"/>
+        <pathelement location="WebContent/WEB-INF/lib/spring-security-web-3.1.0.M2.jar"/>
+        <pathelement location="WebContent/WEB-INF/lib/spring-tx-3.1.2.RELEASE.jar"/>
+        <pathelement location="WebContent/WEB-INF/lib/spring-web-3.1.2.RELEASE.jar"/>
+        <pathelement location="WebContent/WEB-INF/lib/spring-webmvc-3.1.2.RELEASE.jar"/>
+        <pathelement location="WebContent/WEB-INF/lib/stax-api-1.0-2.jar"/>
+        <pathelement location="WebContent/WEB-INF/lib/super-csv-2.0.1.jar"/>
+        <pathelement location="WebContent/WEB-INF/lib/tiles-api-2.2.2.jar"/>
+        <pathelement location="WebContent/WEB-INF/lib/tiles-compat-2.2.2.jar"/>
+        <pathelement location="WebContent/WEB-INF/lib/tiles-core-2.2.2.jar"/>
+        <pathelement location="WebContent/WEB-INF/lib/tiles-el-2.2.2.jar"/>
+        <pathelement location="WebContent/WEB-INF/lib/tiles-extras-2.2.2.jar"/>
+        <pathelement location="WebContent/WEB-INF/lib/tiles-freemarker-2.2.2.jar"/>
+        <pathelement location="WebContent/WEB-INF/lib/tiles-jsp-2.2.2.jar"/>
+        <pathelement location="WebContent/WEB-INF/lib/tiles-mvel-2.2.2.jar"/>
+        <pathelement location="WebContent/WEB-INF/lib/tiles-ognl-2.2.2.jar"/>
+        <pathelement location="WebContent/WEB-INF/lib/tiles-portlet-2.2.2.jar"/>
+        <pathelement location="WebContent/WEB-INF/lib/tiles-portlet-wildcard-2.2.2.jar"/>
+        <pathelement location="WebContent/WEB-INF/lib/tiles-servlet-2.2.2.jar"/>
+        <pathelement location="WebContent/WEB-INF/lib/tiles-servlet-wildcard-2.2.2.jar"/>
+        <pathelement location="WebContent/WEB-INF/lib/tiles-template-2.2.2.jar"/>
+        <pathelement location="WebContent/WEB-INF/lib/tiles-velocity-2.2.2.jar"/>
+        <pathelement location="WebContent/WEB-INF/lib/validation-api-1.0.0.GA.jar"/>
+        <pathelement location="WebContent/WEB-INF/lib/velocity-1.6.2.jar"/>
+        <pathelement location="WebContent/WEB-INF/lib/velocity-tools-2.0.jar"/>
+        <pathelement location="WebContent/WEB-INF/lib/w3c-dom.jar"/>
+        <pathelement location="WebContent/WEB-INF/lib/wstx-asl-3.2.7.jar"/>
+        <pathelement location="WebContent/WEB-INF/lib/xalan-2.6.0.jar"/>
+        <pathelement location="WebContent/WEB-INF/lib/xapool.jar"/>
+        <pathelement location="WebContent/WEB-INF/lib/xercesImpl-2.6.2.jar"/>
+        <pathelement location="WebContent/WEB-INF/lib/xml-apis-1.3.02.jar"/>
+        <pathelement location="WebContent/WEB-INF/lib/xmlParserAPIs-2.0.2.jar"/>
+        <pathelement location="WebContent/WEB-INF/lib/xmlParserAPIs-2.6.2.jar"/>
+        <pathelement location="WebContent/WEB-INF/lib/xmlunit-1.2.jar"/>
+        <pathelement location="WebContent/WEB-INF/lib/xom-1.0.jar"/>
+        <pathelement location="WebContent/WEB-INF/classes"/>
+    </path>
+    <path id="EAR Libraries.libraryclasspath"/>
+    <path id="JBoss EJB 3.x Libraries.libraryclasspath"/>
+    <path id="LendingTree_MiniApp.classpath">
+        <pathelement location="build/classes"/>
+        <path refid="Web App Libraries.libraryclasspath"/>
+        <path refid="EAR Libraries.libraryclasspath"/>
+        <path refid="JBoss EJB 3.x Libraries.libraryclasspath"/>
+        <pathelement location="../../apache-tomcat-7.0.37-windows-x86/apache-tomcat-7.0.37/lib/servlet-api.jar"/>
+    </path>
+    <target name="init">
+        <mkdir dir="build/classes"/>
+        <copy includeemptydirs="false" todir="build/classes">
+            <fileset dir="src">
+                <exclude name="**/*.launch"/>
+                <exclude name="**/*.java"/>
+            </fileset>
+        </copy>
+    </target>
+    <target name="clean">
+        <delete dir="build/classes"/>
+    </target>
+    <target depends="clean" name="cleanall"/>
+    <target depends="build-subprojects,build-project" name="build"/>
+    <target name="build-subprojects"/>
+    <target depends="init" name="build-project">
+        <echo message="${ant.project.name}: ${ant.file}"/>
+        <javac debug="true" debuglevel="${debuglevel}" destdir="build/classes" includeantruntime="false" source="${source}" target="${target}">
+            <src path="src"/>
+            <classpath refid="LendingTree_MiniApp.classpath"/>
+        </javac>
+    </target>
+    <target description="Build all projects which reference this project. Useful to propagate changes." name="build-refprojects"/>
+    <target description="copy Eclipse compiler jars to ant lib directory" name="init-eclipse-compiler">
+        <copy todir="${ant.library.dir}">
+            <fileset dir="${ECLIPSE_HOME}/plugins" includes="org.eclipse.jdt.core_*.jar"/>
+        </copy>
+        <unzip dest="${ant.library.dir}">
+            <patternset includes="jdtCompilerAdapter.jar"/>
+            <fileset dir="${ECLIPSE_HOME}/plugins" includes="org.eclipse.jdt.core_*.jar"/>
+        </unzip>
+    </target>
+    <target description="compile project with Eclipse compiler" name="build-eclipse-compiler">
+        <property name="build.compiler" value="org.eclipse.jdt.core.JDTCompilerAdapter"/>
+        <antcall target="build"/>
+    </target>
+</project>

@@ -1,0 +1,612 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE tiles-definitions PUBLIC  
+       "-//Apache Software Foundation//DTD Tiles Configuration 2.0//EN"  
+       "http://tiles.apache.org/dtds/tiles-config_2_0.dtd">  
+<tiles-definitions>  
+    <definition name="baseLayout" template="baseLayout.jsp">  
+      
+        <put-attribute name="header" value="/WEB-INF/views/header.jsp" />  
+        <put-attribute name="menu" value="/WEB-INF/views/menu.jsp"/>  
+        <put-attribute name="body" value="/WEB-INF/views/body.jsp"/>  
+        <put-attribute name="footer" value="/WEB-INF/views/footer.jsp" />  
+    </definition>  
+  
+	<definition name="registration"   extends="baseLayout">  
+        <put-attribute name="body" value="/WEB-INF/views/Registration.jsp" />  
+    </definition>
+
+	<definition name="sessionexpire"   extends="baseLayout">  
+ 		<put-attribute name="body" value="/WEB-INF/views/Sessionn.jsp" />  
+    </definition>
+    
+   
+  	 <definition name="psessionexpire"   extends="baseLayout">  
+ 
+        <put-attribute name="body" value="/WEB-INF/views/SessionPopUp.jsp" />  	
+    </definition>
+    
+     <definition name="403"   extends="baseLayout">  
+ 			<put-attribute name="body" value="/WEB-INF/views/403.jsp" />  	
+    </definition>
+    
+    <definition name="aboutus"   extends="baseLayout">  
+        <put-attribute name="body" value="/WEB-INF/views/AboutUs.jsp" />  
+    </definition> 
+    
+    
+    <definition name="emical"   extends="baseLayout">  
+        <put-attribute name="body" value="/WEB-INF/views/Emi.jsp" />  
+    </definition>
+     <definition name="emiu"   extends="baseLayout">  
+     	<put-attribute name="menu" value="/WEB-INF/views/usermenu.jsp"></put-attribute>
+        <put-attribute name="body" value="/WEB-INF/views/Emi.jsp" />  
+    </definition>
+    <definition name="regsuccess"   extends="baseLayout">  
+        <put-attribute name="body" value="/WEB-INF/views/RegSuccess.jsp" />  
+    </definition> 
+    
+     <definition name="activateusersuccess"   extends="baseLayout">  
+        <put-attribute name="body" value="/WEB-INF/views/Activate.jsp" />  
+    </definition> 
+     <definition name="login" extends="baseLayout">  
+        <put-attribute name="body" value="/WEB-INF/views/Login.jsp" />  
+    </definition>
+    
+    
+     <definition name="logoutsuccess" extends="baseLayout">  
+        <put-attribute name="body" value="/WEB-INF/views/Logout.jsp" />  
+    </definition>
+    
+     <definition name="LogFailure" extends="baseLayout">  
+        <put-attribute name="body" value="/WEB-INF/views/LogFailure.jsp" />  
+    </definition>
+    
+      <definition name="viewinterest" extends="baseLayout">  
+        <put-attribute name="body" value="/WEB-INF/views/ViewInterest.jsp" />  
+    </definition>
+    
+     <definition name="viewinterestgrid" extends="baseLayout">  
+        <put-attribute name="body" value="/WEB-INF/views/ViewInterestGrid.jsp" />  
+   	 </definition>
+    
+      <definition name="adhomes" extends="baseLayout">  
+    <put-attribute name="menu" value="/WEB-INF/views/menu1.jsp"></put-attribute>
+        <put-attribute name="body" value="/WEB-INF/views/adLogin.jsp" />  
+    </definition>
+    
+      <definition name="adhomess" extends="baseLayout">  
+    <put-attribute name="menu" value="/WEB-INF/views/menu1.jsp"></put-attribute>
+        <put-attribute name="body" value="/WEB-INF/views/adLogin.jsp" />  
+    </definition>
+    <definition name="bankm"   extends="baseLayout">
+  		<put-attribute name="menu" value="/WEB-INF/views/menu1.jsp"></put-attribute>
+        <put-attribute name="body" value="/WEB-INF/views/BankM.jsp" /> </definition> 
+        
+         <definition name="bankadd"  template="/WEB-INF/views/BankAdds.jsp">
+  		</definition>
+       
+        <definition name="bankaddsuccess"   extends="baseLayout">
+  		<put-attribute name="menu" value="/WEB-INF/views/menu1.jsp"></put-attribute>
+        <put-attribute name="body" value="/WEB-INF/views/BankAddSuccess.jsp" /> </definition> 
+        
+        <definition name="bankupdatesuccess"   extends="baseLayout">
+  		<put-attribute name="menu" value="/WEB-INF/views/menu1.jsp"></put-attribute>
+        <put-attribute name="body" value="/WEB-INF/views/UpdateBankSuccess.jsp" /> </definition> 
+        
+         <definition name="bankupdate"   template="/WEB-INF/views/BankUpdate.jsp">
+  		</definition>
+  		
+  		
+         <definition name="bankdelete"   extends="baseLayout">
+  		<put-attribute name="menu" value="/WEB-INF/views/menu1.jsp"></put-attribute>
+        <put-attribute name="body" value="/WEB-INF/views/BankDelete.jsp" /> </definition> 
+        
+         <definition name="addbanksuccess"   extends="baseLayout">
+  		<put-attribute name="menu" value="/WEB-INF/views/menu1.jsp"></put-attribute>
+        <put-attribute name="body" value="/WEB-INF/views/AddBankSuccess.jsp" /> </definition> 
+         
+         <definition name="deletebanksuccess"   extends="baseLayout">
+  		<put-attribute name="menu" value="/WEB-INF/views/menu1.jsp"></put-attribute>
+        <put-attribute name="body" value="/WEB-INF/views/DeleteBankSuccess.jsp" /> </definition> 
+        
+        <!-- Loan Management -->
+        
+        <definition name="loank"   extends="baseLayout">
+  		<put-attribute name="menu" value="/WEB-INF/views/menu1.jsp"></put-attribute>
+        <put-attribute name="body" value="/WEB-INF/views/LoanM.jsp" />  
+    	</definition>
+        <definition name="addloan"   template="/WEB-INF/views/LoanAdd.jsp">
+  		
+    	</definition>
+    	<definition name="updateloan" template="/WEB-INF/views/LoanUpdate.jsp">
+  		</definition>
+  		
+  		<definition name="deleteloan"   extends="baseLayout">
+  		<put-attribute name="menu" value="/WEB-INF/views/menu1.jsp"></put-attribute>
+        <put-attribute name="body" value="/WEB-INF/views/LoanDelete.jsp" />  
+    	</definition>
+        
+        <definition name="loansave"   extends="baseLayout">
+  		<put-attribute name="menu" value="/WEB-INF/views/menu1.jsp"></put-attribute>
+        <put-attribute name="body" value="/WEB-INF/views/LoanAddSuccess.jsp" />  
+    	</definition>
+    	<definition name="loanupdatesuccess"   extends="baseLayout">
+  		<put-attribute name="menu" value="/WEB-INF/views/menu1.jsp"></put-attribute>
+        <put-attribute name="body" value="/WEB-INF/views/LoanUpdateSuccess.jsp" />  
+    	</definition>
+    	<definition name="loandeletesuccess"   extends="baseLayout">
+  		<put-attribute name="menu" value="/WEB-INF/views/menu1.jsp"></put-attribute>
+        <put-attribute name="body" value="/WEB-INF/views/LoanDeleteSuccess.jsp" />  
+    	</definition>
+        
+       
+        
+        <definition name="sanctionreports"   extends="baseLayout">
+  		<put-attribute name="menu" value="/WEB-INF/views/menu1.jsp"></put-attribute>
+        <put-attribute name="body" value="/WEB-INF/views/Reports.jsp" />  
+    	</definition>
+        
+        
+        
+        
+        
+         <definition name="deptm"   extends="baseLayout">
+  		<put-attribute name="menu" value="/WEB-INF/views/menu1.jsp"></put-attribute>
+        <put-attribute name="body" value="/WEB-INF/views/DeptM.jsp" />  
+    </definition>
+    
+     <definition name="deptadd"   template="/WEB-INF/views/DeptAdd.jsp">
+  		
+    </definition>
+    
+     <definition name="deptsave"   extends="baseLayout">
+  		<put-attribute name="menu" value="/WEB-INF/views/menu1.jsp"></put-attribute>
+        <put-attribute name="body" value="/WEB-INF/views/DeptAddSuccess.jsp" />  
+    </definition>
+     <definition name="dbexport"   extends="baseLayout">
+  		<put-attribute name="menu" value="/WEB-INF/views/menu1.jsp"></put-attribute>
+        <put-attribute name="body" value="/WEB-INF/views/DbExport.jsp" />  
+    </definition>
+    <definition name="dbimport"   extends="baseLayout">
+  		<put-attribute name="menu" value="/WEB-INF/views/menu1.jsp"></put-attribute>
+        <put-attribute name="body" value="/WEB-INF/views/DbImport.jsp" />  
+    </definition>
+    
+     <definition name="deptupdate"  template="/WEB-INF/views/DeptUpdate.jsp">
+  		
+    </definition>
+    <definition name="deptupdatesave"   extends="baseLayout">
+  		<put-attribute name="menu" value="/WEB-INF/views/menu1.jsp"></put-attribute>
+        <put-attribute name="body" value="/WEB-INF/views/DeptUpdateSuccess.jsp" />  
+    </definition>
+     <definition name="deletedeptsuccess"   extends="baseLayout">
+  		<put-attribute name="menu" value="/WEB-INF/views/menu1.jsp"></put-attribute>
+        <put-attribute name="body" value="/WEB-INF/views/DeptDeleteSuccess.jsp" />  
+    </definition>
+    
+    
+     <definition name="empm"   extends="baseLayout">
+  		<put-attribute name="menu" value="/WEB-INF/views/menu1.jsp"></put-attribute>
+        <put-attribute name="body" value="/WEB-INF/views/EmpM.jsp" />  
+    </definition>
+     <definition name="addemp"   template="/WEB-INF/views/EmpAdd.jsp">
+  		<!-- <put-attribute name="menu" value="/WEB-INF/views/menu1.jsp"></put-attribute>
+        <put-attribute name="body" value="/WEB-INF/views/EmpAdd.jsp" />  --> 
+    </definition>
+     <definition name="empsave"   extends="baseLayout">
+  		<put-attribute name="menu" value="/WEB-INF/views/menu1.jsp"></put-attribute>
+        <put-attribute name="body" value="/WEB-INF/views/EmpAddSuccess.jsp" />  
+    </definition>
+    
+     <definition name="empupdate"  template="/WEB-INF/views/EmpUpdate.jsp">
+  		
+    </definition>
+     <definition name="empupdatesuccess"   extends="baseLayout">
+  		<put-attribute name="menu" value="/WEB-INF/views/menu1.jsp"></put-attribute>
+        <put-attribute name="body" value="/WEB-INF/views/EmpUpdateSuccess.jsp" />  
+    </definition>
+    
+     <definition name="empdeletesuccess"   extends="baseLayout">
+  		<put-attribute name="menu" value="/WEB-INF/views/menu1.jsp"></put-attribute>
+        <put-attribute name="body" value="/WEB-INF/views/EmpDelete.jsp" />  
+    </definition>
+    
+    
+    
+    <!--Customer Management-->
+    <definition name="cust"   extends="baseLayout">
+  		<put-attribute name="menu" value="/WEB-INF/views/menu1.jsp"></put-attribute>
+        <put-attribute name="body" value="/WEB-INF/views/CustM.jsp" />  
+    </definition>
+    
+     <definition name="adminpersonal"   extends="baseLayout">
+  		<put-attribute name="menu" value="/WEB-INF/views/menu1.jsp"></put-attribute>
+        <put-attribute name="body" value="/WEB-INF/views/PersonalM.jsp" />  
+    </definition>
+    
+    
+    
+    
+     <definition name="personalresponse"   extends="baseLayout">
+  		<put-attribute name="menu" value="/WEB-INF/views/menu1.jsp"></put-attribute>
+        <put-attribute name="body" value="/WEB-INF/views/PersonalResponse.jsp" />  
+    </definition>
+    
+     <definition name="educationresponse"   extends="baseLayout">
+  		<put-attribute name="menu" value="/WEB-INF/views/menu1.jsp"></put-attribute>
+        <put-attribute name="body" value="/WEB-INF/views/EducationResponse.jsp" />  
+    </definition>
+    
+     <definition name="homeresponse"   extends="baseLayout">
+  		<put-attribute name="menu" value="/WEB-INF/views/menu1.jsp"></put-attribute>
+        <put-attribute name="body" value="/WEB-INF/views/HomeResponse.jsp" />  
+    </definition>
+     <definition name="businessresponse"   extends="baseLayout">
+  		<put-attribute name="menu" value="/WEB-INF/views/menu1.jsp"></put-attribute>
+        <put-attribute name="body" value="/WEB-INF/views/BusinessResponse.jsp" />  
+    </definition>
+    
+    
+     <definition name="apersonalresponse"   extends="baseLayout">
+  		<put-attribute name="menu" value="/WEB-INF/views/menu1.jsp"></put-attribute>
+        <put-attribute name="body" value="/WEB-INF/views/aPersonalResponse.jsp" />  
+    </definition>
+    
+     <definition name="aeducationresponse"   extends="baseLayout">
+  		<put-attribute name="menu" value="/WEB-INF/views/menu1.jsp"></put-attribute>
+        <put-attribute name="body" value="/WEB-INF/views/aEducationResponse.jsp" />  
+    </definition>
+    
+     <definition name="ahomeresponse"   extends="baseLayout">
+  		<put-attribute name="menu" value="/WEB-INF/views/menu1.jsp"></put-attribute>
+        <put-attribute name="body" value="/WEB-INF/views/aHomeResponse.jsp" />  
+    </definition>
+     <definition name="abusinessresponse"   extends="baseLayout">
+  		<put-attribute name="menu" value="/WEB-INF/views/menu1.jsp"></put-attribute>
+        <put-attribute name="body" value="/WEB-INF/views/aBusinessResponse.jsp" />  
+    </definition>
+    
+    <definition name="responsecust"   extends="baseLayout">
+  		<put-attribute name="menu" value="/WEB-INF/views/menu1.jsp"></put-attribute>
+        <put-attribute name="body" value="/WEB-INF/views/CustResponse.jsp" />  
+    </definition>
+    
+    <definition name="taskassign"   extends="baseLayout">
+  		<put-attribute name="menu" value="/WEB-INF/views/menu1.jsp"></put-attribute>
+        <put-attribute name="body" value="/WEB-INF/views/TaskAssign.jsp" />  
+    </definition>
+    
+     <definition name="loansuccess"   extends="baseLayout">
+  		<put-attribute name="menu" value="/WEB-INF/views/menu1.jsp"></put-attribute>
+        <put-attribute name="body" value="/WEB-INF/views/LoanSuccess.jsp" />  
+    </definition>
+    
+     <definition name="subcust"   extends="baseLayout">
+  		<put-attribute name="menu" value="/WEB-INF/views/menu1.jsp"></put-attribute>
+        <put-attribute name="body" value="/WEB-INF/views/CustDelete.jsp" />  
+    </definition>
+    
+     <definition name="loanapplied"   extends="baseLayout">
+  		<put-attribute name="menu" value="/WEB-INF/views/menu1.jsp"></put-attribute>
+        <put-attribute name="body" value="/WEB-INF/views/LoanApplied.jsp" />  
+    </definition>
+    
+      <definition name="loanverified"   extends="baseLayout">
+  		<put-attribute name="menu" value="/WEB-INF/views/menu1.jsp"></put-attribute>
+        <put-attribute name="body" value="/WEB-INF/views/loanverified.jsp" />  
+    </definition>
+    
+    
+    
+   
+     <definition name="msgadmin"   extends="baseLayout">
+  		<put-attribute name="menu" value="/WEB-INF/views/menu1.jsp"></put-attribute>
+        <put-attribute name="body" value="/WEB-INF/views/MsgM.jsp" />  
+    </definition>
+    <definition name="composeadmin"   extends="baseLayout">
+  		<put-attribute name="menu" value="/WEB-INF/views/menu1.jsp"></put-attribute>
+        <put-attribute name="body" value="/WEB-INF/views/Compose.jsp" />  
+    </definition>
+     <definition name="composeadminsuccess"   extends="baseLayout">
+  		<put-attribute name="menu" value="/WEB-INF/views/menu1.jsp"></put-attribute>
+        <put-attribute name="body" value="/WEB-INF/views/ComposeSave.jsp" />  
+    </definition>
+    
+    
+     <definition name="adminupdate"   extends="baseLayout">
+  		<put-attribute name="menu" value="/WEB-INF/views/menu1.jsp"></put-attribute>
+        <put-attribute name="body" value="/WEB-INF/views/admingrid.jsp" />  
+    </definition>
+    <definition name="adminedit"   extends="baseLayout">
+  		<put-attribute name="menu" value="/WEB-INF/views/menu1.jsp"></put-attribute>
+        <put-attribute name="body" value="/WEB-INF/views/UpdateProfile.jsp" />  
+    </definition>
+    
+    
+     <definition name="adminchpwd"   extends="baseLayout">
+  		<put-attribute name="menu" value="/WEB-INF/views/menu1.jsp"></put-attribute>
+        <put-attribute name="body" value="/WEB-INF/views/UpdatePassword.jsp" />  
+    </definition>
+    
+    
+    <definition name="uppwdsuccess"   extends="baseLayout">
+  		<put-attribute name="menu" value="/WEB-INF/views/menu1.jsp"></put-attribute>
+        <put-attribute name="body" value="/WEB-INF/views/UpdatePasswordSuccess.jsp" />  
+    </definition>
+    
+    <definition name="uppwdfail"   extends="baseLayout">
+  		<put-attribute name="menu" value="/WEB-INF/views/menu1.jsp"></put-attribute>
+        <put-attribute name="body" value="/WEB-INF/views/UpFailure.jsp" />  
+    </definition>
+      <definition name="upprofilesuccess"   extends="baseLayout">
+  		<put-attribute name="menu" value="/WEB-INF/views/menu1.jsp"></put-attribute>
+        <put-attribute name="body" value="/WEB-INF/views/UpdateProfileSuccess.jsp" />  
+    </definition>
+    
+    
+    
+    
+    
+    <!-- User  -->
+    
+     <definition name="userhome"   extends="baseLayout">
+  		<put-attribute name="menu" value="/WEB-INF/views/usermenu.jsp"></put-attribute>
+        <put-attribute name="body" value="/WEB-INF/views/userHome.jsp" />  
+    </definition>
+    
+     <definition name="loan"   extends="baseLayout">
+  		<put-attribute name="menu" value="/WEB-INF/views/usermenu.jsp"></put-attribute>
+        <put-attribute name="body" value="/WEB-INF/views/applyloan.jsp" />  
+    </definition>
+    <definition name="apploans"   extends="baseLayout">
+  		<put-attribute name="menu" value="/WEB-INF/views/usermenu.jsp"></put-attribute>
+        <put-attribute name="body" value="/WEB-INF/views/applyloansuccess.jsp" />  
+    </definition>
+     <definition name="status"   extends="baseLayout">
+  		<put-attribute name="menu" value="/WEB-INF/views/usermenu.jsp"></put-attribute>
+        <put-attribute name="body" value="/WEB-INF/views/status.jsp" />  
+    </definition>
+     <definition name="msguser"   extends="baseLayout">
+  		<put-attribute name="menu" value="/WEB-INF/views/usermenu.jsp"></put-attribute>
+        <put-attribute name="body" value="/WEB-INF/views/MsgUser.jsp" />  
+    </definition>
+    <definition name="composeuser"   extends="baseLayout">
+  		<put-attribute name="menu" value="/WEB-INF/views/usermenu.jsp"></put-attribute>
+        <put-attribute name="body" value="/WEB-INF/views/ComposeUser.jsp" />  
+    </definition>
+    
+     <definition name="composesave"   extends="baseLayout">
+  		<put-attribute name="menu" value="/WEB-INF/views/usermenu.jsp"></put-attribute>
+        <put-attribute name="body" value="/WEB-INF/views/ComposeSave.jsp" />  
+    </definition>
+    
+      <definition name="updateuser"   extends="baseLayout">
+  		<put-attribute name="menu" value="/WEB-INF/views/usermenu.jsp"></put-attribute>
+        <put-attribute name="body" value="/WEB-INF/views/UpdateUser.jsp" />  
+    </definition>
+     <definition name="useredit"   extends="baseLayout">
+  		<put-attribute name="menu" value="/WEB-INF/views/usermenu.jsp"></put-attribute>
+        <put-attribute name="body" value="/WEB-INF/views/UserUpdateProfile.jsp" />  
+    </definition>
+      <definition name="chpwduser"   extends="baseLayout">
+  		<put-attribute name="menu" value="/WEB-INF/views/usermenu.jsp"></put-attribute>
+        <put-attribute name="body" value="/WEB-INF/views/ChPwdUser.jsp" />  
+    </definition>
+    
+     <definition name="updateusersuccess"   extends="baseLayout">
+  		<put-attribute name="menu" value="/WEB-INF/views/usermenu.jsp"></put-attribute>
+        <put-attribute name="body" value="/WEB-INF/views/UpdateUserSuccess.jsp" />  
+    </definition>
+    <definition name="chpwdusersuccess"   extends="baseLayout">
+  		<put-attribute name="menu" value="/WEB-INF/views/usermenu.jsp"></put-attribute>
+        <put-attribute name="body" value="/WEB-INF/views/ChpwdUserSuccess.jsp" />  
+    </definition>
+     <definition name="chpwdfail"   extends="baseLayout">
+  		<put-attribute name="menu" value="/WEB-INF/views/usermenu.jsp"></put-attribute>
+        <put-attribute name="body" value="/WEB-INF/views/ChpwdUserFail.jsp" />  
+    </definition>
+    
+    
+     <definition name="personalloan"   extends="baseLayout">
+  		<put-attribute name="menu" value="/WEB-INF/views/usermenu.jsp"></put-attribute>
+        <put-attribute name="body" value="/WEB-INF/views/ApplyPersonalLoan.jsp" />  
+    </definition>
+    
+     <definition name="personalloansave"   extends="baseLayout">
+  		<put-attribute name="menu" value="/WEB-INF/views/usermenu.jsp"></put-attribute>
+        <put-attribute name="body" value="/WEB-INF/views/ApplyPersonalLoanSuccess.jsp" />  
+    </definition>
+    
+    <definition name="educationloan"   extends="baseLayout">
+  		<put-attribute name="menu" value="/WEB-INF/views/usermenu.jsp"></put-attribute>
+        <put-attribute name="body" value="/WEB-INF/views/ApplyEducationLoan.jsp" />  
+    </definition>
+    
+     <definition name="educationloansave"   extends="baseLayout">
+  		<put-attribute name="menu" value="/WEB-INF/views/usermenu.jsp"></put-attribute>
+        <put-attribute name="body" value="/WEB-INF/views/ApplyEducationLoanSuccess.jsp" />  
+    </definition>
+     
+      <definition name="homeloan"   extends="baseLayout">
+  		<put-attribute name="menu" value="/WEB-INF/views/usermenu.jsp"></put-attribute>
+        <put-attribute name="body" value="/WEB-INF/views/ApplyHomeLoan.jsp" />  
+    </definition>
+ 
+    
+     
+      <definition name="homeloansave"   extends="baseLayout">
+  		<put-attribute name="menu" value="/WEB-INF/views/usermenu.jsp"></put-attribute>
+        <put-attribute name="body" value="/WEB-INF/views/ApplyHomeLoanSuccess.jsp" />  
+    </definition>
+    
+    
+    <definition name="businessloan"   extends="baseLayout">
+  		<put-attribute name="menu" value="/WEB-INF/views/usermenu.jsp"></put-attribute>
+        <put-attribute name="body" value="/WEB-INF/views/ApplyBusinessLoan.jsp" />  
+    </definition>
+   
+      <definition name="businessloansave"   extends="baseLayout">
+  		<put-attribute name="menu" value="/WEB-INF/views/usermenu.jsp"></put-attribute>
+        <put-attribute name="body" value="/WEB-INF/views/ApplyBusinessLoanSuccess.jsp" />  
+    </definition>
+  <!-- Pickup Dept -->
+   
+   
+    <definition name="picdept" extends="baseLayout">  
+    <put-attribute name="menu" value="/WEB-INF/views/picmenu.jsp"></put-attribute>
+        <put-attribute name="body" value="/WEB-INF/views/PickUp.jsp" />  
+    </definition> 
+      <definition name="viewApp" extends="baseLayout">  
+    <put-attribute name="menu" value="/WEB-INF/views/picmenu.jsp"></put-attribute>
+        <put-attribute name="body" value="/WEB-INF/views/ViewApp.jsp" />  
+    </definition> 
+     <definition name="pickview" extends="baseLayout">  
+    <put-attribute name="menu" value="/WEB-INF/views/picmenu.jsp"></put-attribute>
+        <put-attribute name="body" value="/WEB-INF/views/PickView.jsp" />  
+    </definition> 
+     <definition name="pickupsuccess" extends="baseLayout">  
+    <put-attribute name="menu" value="/WEB-INF/views/picmenu.jsp"></put-attribute>
+        <put-attribute name="body" value="/WEB-INF/views/PickUpSuccess.jsp" />  
+    </definition>
+     <definition name="msgpic" extends="baseLayout">  
+    <put-attribute name="menu" value="/WEB-INF/views/picmenu.jsp"></put-attribute>
+        <put-attribute name="body" value="/WEB-INF/views/MsgPic.jsp" />  
+    </definition> 
+     <definition name="composepic" extends="baseLayout">  
+    <put-attribute name="menu" value="/WEB-INF/views/picmenu.jsp"></put-attribute>
+        <put-attribute name="body" value="/WEB-INF/views/ComposePic.jsp" />  
+    </definition> 
+    
+    
+    
+    
+    <!-- Verification Dept -->
+     <definition name="verdept"   extends="baseLayout">
+  		<put-attribute name="menu" value="/WEB-INF/views/verificationmenu.jsp"></put-attribute>
+        <put-attribute name="body" value="/WEB-INF/views/verification.jsp" />  
+    </definition>
+     <definition name="ver"   extends="baseLayout">
+  		<put-attribute name="menu" value="/WEB-INF/views/verificationmenu.jsp"></put-attribute>
+        <put-attribute name="body" value="/WEB-INF/views/verificationDetails.jsp" />  
+    </definition>
+    <definition name="responsevery"   extends="baseLayout">
+  		<put-attribute name="menu" value="/WEB-INF/views/verificationmenu.jsp"></put-attribute>
+        <put-attribute name="body" value="/WEB-INF/views/VeryResp.jsp" />  
+    </definition>
+    <definition name="vercust"   extends="baseLayout">
+  		<put-attribute name="menu" value="/WEB-INF/views/verificationmenu.jsp"></put-attribute>
+        <put-attribute name="body" value="/WEB-INF/views/VerySuccess.jsp" />  
+    </definition>
+     <definition name="verymsg"   extends="baseLayout">
+  		<put-attribute name="menu" value="/WEB-INF/views/verificationmenu.jsp"></put-attribute>
+        <put-attribute name="body" value="/WEB-INF/views/verymsg.jsp" />  
+    </definition>
+     <definition name="vercompose"   extends="baseLayout">
+  		<put-attribute name="menu" value="/WEB-INF/views/verificationmenu.jsp"></put-attribute>
+        <put-attribute name="body" value="/WEB-INF/views/vercompose.jsp" />  
+    </definition>
+    
+     <definition name="verificationgrid"   extends="baseLayout">
+  		<put-attribute name="menu" value="/WEB-INF/views/verificationmenu.jsp"></put-attribute>
+        <put-attribute name="body" value="/WEB-INF/views/verificationgrid.jsp" />  
+    </definition>
+     <definition name="verupdate"   extends="baseLayout">
+  		<put-attribute name="menu" value="/WEB-INF/views/verificationmenu.jsp"></put-attribute>
+        <put-attribute name="body" value="/WEB-INF/views/verupdate.jsp" />  
+    </definition> 
+    
+     <definition name="veprofilesuccess"   extends="baseLayout">
+  		<put-attribute name="menu" value="/WEB-INF/views/verificationmenu.jsp"></put-attribute>
+        <put-attribute name="body" value="/WEB-INF/views/veprofilesuccess.jsp" />  
+    </definition>
+    
+     <definition name="empchpwd"   extends="baseLayout">
+  		<put-attribute name="menu" value="/WEB-INF/views/verificationmenu.jsp"></put-attribute>
+        <put-attribute name="body" value="/WEB-INF/views/empchpwd.jsp" />  
+    </definition>
+  
+     <definition name="empchpwdsuccess"   extends="baseLayout">
+  		<put-attribute name="menu" value="/WEB-INF/views/verificationmenu.jsp"></put-attribute>
+        <put-attribute name="body" value="/WEB-INF/views/empchpwdsuccess.jsp" />  
+    </definition>
+    
+     <definition name="empchpwdfail"   extends="baseLayout">
+  		<put-attribute name="menu" value="/WEB-INF/views/verificationmenu.jsp"></put-attribute>
+        <put-attribute name="body" value="/WEB-INF/views/empchpwdfail.jsp" />  
+    </definition>
+    
+  
+     <definition name="verpersonalresponse"   extends="baseLayout">
+  		<put-attribute name="menu" value="/WEB-INF/views/verificationmenu.jsp"></put-attribute>
+        <put-attribute name="body" value="/WEB-INF/views/VerPerRes.jsp" />  
+    </definition>
+      <definition name="verhomeresponse"   extends="baseLayout">
+  		<put-attribute name="menu" value="/WEB-INF/views/verificationmenu.jsp"></put-attribute>
+        <put-attribute name="body" value="/WEB-INF/views/VerHomeRes.jsp" />  
+    </definition>
+      <definition name="vereducationresponse"   extends="baseLayout">
+  		<put-attribute name="menu" value="/WEB-INF/views/verificationmenu.jsp"></put-attribute>
+        <put-attribute name="body" value="/WEB-INF/views/VerEduRes.jsp" />  
+    </definition>
+      <definition name="verbusinessresponse"   extends="baseLayout">
+  		<put-attribute name="menu" value="/WEB-INF/views/verificationmenu.jsp"></put-attribute>
+        <put-attribute name="body" value="/WEB-INF/views/VerBusRes.jsp" />  
+    </definition>
+      <definition name="uploaddoc"   extends="baseLayout">
+  		<put-attribute name="menu" value="/WEB-INF/views/verificationmenu.jsp"></put-attribute>
+        <put-attribute name="body" value="/WEB-INF/views/UploadDocs.jsp" />  
+    </definition>
+    
+    <!-- Legal Dept -->
+ <definition name="legdept"   extends="baseLayout">
+  		<put-attribute name="menu" value="/WEB-INF/views/legalmenu.jsp"></put-attribute>
+        <put-attribute name="body" value="/WEB-INF/views/legalhome.jsp" />  
+    </definition>    
+     <definition name="legd"   extends="baseLayout">
+  		<put-attribute name="menu" value="/WEB-INF/views/legalmenu.jsp"></put-attribute>
+        <put-attribute name="body" value="/WEB-INF/views/legalD.jsp" />  
+    </definition>
+    <definition name="legalchk"   extends="baseLayout">
+  		<put-attribute name="menu" value="/WEB-INF/views/legalmenu.jsp"></put-attribute>
+        <put-attribute name="body" value="/WEB-INF/views/legalchk.jsp" />  
+    </definition>
+     <definition name="legalsuccess"   extends="baseLayout">
+  		<put-attribute name="menu" value="/WEB-INF/views/legalmenu.jsp"></put-attribute>
+        <put-attribute name="body" value="/WEB-INF/views/legalsuccess.jsp" />  
+    </definition>
+     <definition name="legalmsg"   extends="baseLayout">
+  		<put-attribute name="menu" value="/WEB-INF/views/legalmenu.jsp"></put-attribute>
+        <put-attribute name="body" value="/WEB-INF/views/legalmsg.jsp" />  
+    </definition>
+     <definition name="legalcompose"   extends="baseLayout">
+  		<put-attribute name="menu" value="/WEB-INF/views/legalmenu.jsp"></put-attribute>
+        <put-attribute name="body" value="/WEB-INF/views/legalcompose.jsp" />  
+    </definition>
+    
+    
+     <definition name="Interest" extends="baseLayout">  
+        <put-attribute name="body" value="/WEB-INF/views/Interest.jsp" />  
+    </definition>
+    
+    <definition name="interestgrid" extends="baseLayout">  
+        <put-attribute name="body" value="/WEB-INF/views/InterestGrid.jsp" />  
+    </definition>
+      <definition name="forgotpage" extends="baseLayout">  
+        <put-attribute name="body" value="/WEB-INF/views/Forgot.jsp" />  
+    </definition>
+    <definition name="forgotsuccess" extends="baseLayout">  
+        <put-attribute name="body" value="/WEB-INF/views/ForgotSuccess.jsp" />  
+    </definition>
+    
+     <definition name="openjsp" template="/WEB-INF/views/openjspexcel.jsp"></definition>
+       
+     <definition name="forgotfail" extends="baseLayout">  
+        <put-attribute name="body" value="/WEB-INF/views/ForgotFail.jsp" />  
+    </definition>
+         
+  		  <definition name="success"   extends="baseLayout">
+  		<put-attribute name="menu" value="/WEB-INF/views/verificationmenu.jsp"></put-attribute>
+        <put-attribute name="body" value="/WEB-INF/views/SuccessUpload.jsp" />  
+    </definition>
+    </tiles-definitions>
