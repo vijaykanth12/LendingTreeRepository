@@ -139,6 +139,7 @@ import com.lendingtree.validator.VPersonalLoanValidator;
 @Controller
 	
 	public class LendingTreeController {
+		System.out.println("checking Git");
 	@Autowired
 	private RegistrationService regService;
 	@Autowired
